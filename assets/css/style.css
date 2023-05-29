@@ -18,6 +18,12 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .join_us {
+    font-size: 2em;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .join_us {
     font-size: 5em;
