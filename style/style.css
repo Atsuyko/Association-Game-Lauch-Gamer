@@ -1,0 +1,41 @@
+.img_background {
+  /* On met en place le fond d'écran */
+  min-height: 100%;
+  min-width: 1024px;
+  /* On indique un redimensionnement proportionnel */
+  width: 100%;
+  height: auto;
+  /* L'image est positionnée en haut à gauche */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* Le traitement est ici spécifique à l'image */
+  .img_background {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
+}
+
+.background_div {
+  display: inline-block;
+  position: relative;
+}
+
+.join_us {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: Georgia;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  font-size: 5em;
+}
