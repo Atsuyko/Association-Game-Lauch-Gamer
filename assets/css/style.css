@@ -1,7 +1,7 @@
 .img_background {
   /* On met en place le fond d'écran */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 100%;
   /* On indique un redimensionnement proportionnel */
   width: 100%;
   height: auto;
@@ -11,13 +11,16 @@
   left: 0;
 }
 
-@media screen and (max-width: 1024px) {
+/* Dimension du texte baissé en dessous du seuil d'écran "lg" (992px) */
+@media screen and (max-width: 992px) {
+  .join_us {
+    font-size: 3em;
+  }
+}
 
-  /* Le traitement est ici spécifique à l'image */
-  .img_background {
-    left: 50%;
-    margin-left: -512px;
-    /* 50% */
+@media screen and (min-width: 992px) {
+  .join_us {
+    font-size: 5em;
   }
 }
 
@@ -38,9 +41,8 @@
   top: 35%;
   color: rgb(255, 255, 255);
   width: 70%;
-  font-size: 5em;
 }
 
 .home_description {
-  font-family: Georgia
+  font-family: Georgia;
 }
